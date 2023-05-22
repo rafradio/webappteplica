@@ -9,10 +9,7 @@ from .forms import ClientCallForm
 def index(request):
     cities = Cities.objects.all()
     goods = Goods.objects.all()
-    goodsList = list(goods)
-    goodsListSite = []
-    for i in range(4):
-        goodsListSite.append(goodsList[i])
+    goodsListSite = [list(goods)[i] for i in range(4)]
     print(goodsListSite[3].name)
     data = {
         'cities': cities,
