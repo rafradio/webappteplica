@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="{% static 'main/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/styleModal.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/styleModal2.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/goods.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    {% block main %}
+    {% endblock %}
+</body>
+</html>

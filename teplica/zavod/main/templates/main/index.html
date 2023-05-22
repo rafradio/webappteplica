@@ -1,0 +1,104 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Завод теплиц{% endblock %}
+{% block main %}
+    <div class="container">
+        <header class="header-teplica">
+            <nav class="top-menu">
+                <div class="logo"></div>
+                <div class="menu-items">
+                    <div class="element">О нас</div>
+                    <div class="element"><a href="#advantage">Продукция</a></div>
+                    <div class="element">Каталог</div>
+                    <div class="element">Почему мы</div>
+                    <div class="element">Отзывы</div>
+                </div>
+                <div class="city-geo">
+                    <div class="city-name">{{ firstCity.city }}</div>
+                    <div class="change-city">Все города</div>
+                </div>
+                <div class="phone">
+                    <div class="phone-digits">{{ firstCity.phone }}</div>
+                    <div class="take-call button-consult-call">Заказать звонок</div>
+                </div>
+                <div class="data_city_phone">
+                    {% if cities %}
+                        {% for el in cities %}
+                            <div class="data_cities">{{ el.city }}</div>
+                            <div class="data_phones">{{ el.phone }}</div>
+                        {% endfor %}
+                    {% endif %}
+                </div> 
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="banner-title">
+                <h1 class="title">краб-система</h1>
+                <h3 class="subtitle">Для быстровозводимых каркасных конструкций</h3>
+                <div class="button-consult button-consult-call"><p>Получить консультацию</p></div>
+            </div>
+        </div>
+        <div id="advantage" class="adv-system">
+            <div class="info">
+                <h2 class="title">Преимущество системы</h2>
+                <div class="info_details">
+                    <div class="info_details_row">
+                        <div class="info_element">
+                            <div class="info_element_icon">
+                                <div class="info_element_icon_wrap">
+                                    <img class= "first_pic" src="/static/main/img/Vector_bg.png" alt="Иконка" width="99px" height="98px">
+                                    <img class= "second_pic" src="/static/main/img/Vector_pc1.png" alt="Иконка" width="68px" height="64px">
+                                </div>
+                            </div>
+                            <div class="info_element_text">
+                                <h4 class="info_title">Высокая прочность, жесткость и надежность</h4>
+                                <div class="info_text">Пo прочности соединения с помощью краб-системы ничем не уступает сварке</div>
+                            </div>
+                        </div>
+                        <div class="info_element">
+                            <div class="info_element_icon">
+                                <div class="info_element_icon_wrap">
+                                    <img class= "first_pic" src="/static/main/img/Vector_bg.png" alt="Иконка" width="99px" height="98px">
+                                    <img class= "second_pic" src="/static/main/img/Vector_pc1.png" alt="Иконка" width="68px" height="64px">
+                                </div>
+                            </div>
+                            <div class="info_element_text">
+                                <h4 class="info_title">Высокая прочность, жесткость и надежность</h4>
+                                <div class="info_text">Пo прочности соединения с помощью краб-системы ничем не уступает сварке</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_details_row">
+                        <div class="info_element">
+                            <div class="info_element_icon">
+                                <div class="info_element_icon_wrap">
+                                    <img class= "first_pic" src="/static/main/img/Vector_bg.png" alt="Иконка" width="99px" height="98px">
+                                    <img class= "second_pic" src="/static/main/img/Vector_pc1.png" alt="Иконка" width="68px" height="64px">
+                                </div>
+                            </div>
+                            <div class="info_element_text">
+                                <h4 class="info_title">Высокая прочность, жесткость и надежность</h4>
+                                <div class="info_text">Пo прочности соединения с помощью краб-системы ничем не уступает сварке</div>
+                            </div>
+                        </div>
+                        <div class="info_element">
+                            <div class="info_element_icon">
+                                <div class="info_element_icon_wrap">
+                                    <img class= "first_pic" src="/static/main/img/Vector_bg.png" alt="Иконка" width="99px" height="98px">
+                                    <img class= "second_pic" src="/static/main/img/Vector_pc1.png" alt="Иконка" width="68px" height="64px">
+                                </div>
+                            </div>
+                            <div class="info_element_text">
+                                <h4 class="info_title">Высокая прочность, жесткость и надежность</h4>
+                                <div class="info_text">Пo прочности соединения с помощью краб-системы ничем не уступает сварке</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'main/uiGods.html' %}
+    </div>
+    {% include 'main/uiModalCall.html' %}
+    <script src="{% static 'main/js/Main.js' %}" type="module"></script>
+{% endblock %}

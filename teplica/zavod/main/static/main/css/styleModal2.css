@@ -1,0 +1,35 @@
+.data_city_phone {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 240px;
+    flex-wrap: wrap;
+    height: auto;
+    z-index: 2;
+    background-color: rgb(241, 241, 241);
+}
+.data_cities {
+    display: flex;
+    height: 17px;
+    align-items: center;
+    width: 48%;
+    font-size: 12px;
+    margin-bottom: 15px;
+    border-bottom: 0.3px solid #6d6d6d;
+    z-index: 3;
+    cursor: pointer;
+}
+.data_phones {
+    display: flex;
+    width: 48%;
+    height: 17px;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+    border-bottom: 0.3px solid #6d6d6d;
+    cursor: pointer;
+}
+.data_block_on {
+    display: flex;
+}

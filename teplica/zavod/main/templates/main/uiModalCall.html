@@ -1,0 +1,23 @@
+<div id="request_modal" class="request_modal_wrap">
+    <div class="request_modal">
+        <div class="modal_icons">
+            <div class="JALogo_pic"></div>
+            <img src="/static/main/img/Icon_Close3x.svg" alt="Close logo" class="close_btn">
+        </div>
+        <form id="callForm" class="modal_content" method="POST" action="">
+            {% csrf_token %}
+            <div class="form_name">Обратный звонок</div>
+            <div class="data_enter">
+                <div class="active_line"></div>
+                <label for="name" class="form-field__label">Ваше имя</label>
+                <input id="name" type="text" class="form-field__input" name="name" placeholder="Мария">
+            </div>
+            <div class="data_enter">
+                <div class="active_line"></div>
+                <label for="name" class="form-field__label">Телефон</label>
+                <input id="name" type="text" class="form-field__input" name="phone" placeholder="+7 (917) 000-00-00">
+            </div>
+            <div id="formButton" class="form_button"><p>Отправить</p></div>
+        </form>
+    </div>
+</div>
