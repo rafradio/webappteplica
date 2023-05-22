@@ -223,7 +223,6 @@ body {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    border: 0.2px solid black;
 }
 .info .title {
     display: flex;
@@ -307,7 +306,7 @@ body {
     display: flex;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 33px;
     letter-spacing: 0.001em;
     color: #000000;
@@ -319,7 +318,7 @@ body {
     display: flex;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.001em;
     color: #000000;

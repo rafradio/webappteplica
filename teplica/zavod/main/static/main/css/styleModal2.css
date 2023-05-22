@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 70%;
-    width: 240px;
+    width: 340px;
     flex-wrap: wrap;
     height: auto;
     z-index: 2;
@@ -14,7 +14,7 @@
     height: 17px;
     align-items: center;
     width: 48%;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 15px;
     border-bottom: 0.3px solid #6d6d6d;
     z-index: 3;
@@ -23,9 +23,9 @@
 .data_phones {
     display: flex;
     width: 48%;
-    height: 17px;
+    height: 15px;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 15px;
     border-bottom: 0.3px solid #6d6d6d;
     cursor: pointer;

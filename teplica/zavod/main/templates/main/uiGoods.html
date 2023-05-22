@@ -1,0 +1,29 @@
+<div class="crab-goods">
+    <div class="info">
+        <h2 class="title">Всегда в наличии</h2>
+        <div class="cards-wrap">
+            {% if goods %}
+                {% for el in goods %}
+                    <div class="product_card">
+                        <div class="image-block">
+                            <img class= "first_pic" src="{{ el.photo }}" alt="Иконка" width="302px" height="194px">
+                        </div>
+                        <div class="info-block">
+                            <div class="goods_name">{{ el.name }}</div>
+                            <div class="price-quant">
+                                <div class="price">{{ el.price|floatformat:"0" }}{{ ' руб/комп' }}</div>
+                                <div class="quantity_block">
+                                    <input id="quantity" type="text" class="input-frame" name="quantity" placeholder="0">
+                                    <div class="quant-type">комп.</div>
+                                </div>
+                            </div>
+                            <div class="button-block">
+                                <div class="order">Заказать</div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
