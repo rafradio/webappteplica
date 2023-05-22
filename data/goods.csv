@@ -1,0 +1,5 @@
+id,name,price,photo,quantity,flag
+1,"Т-образная краб-система 20х20",20.00,/static/main/img/T-crab.jpg,10,1
+2,"X-образная краб-система 20х20",20.00,/static/main/img/T-crab-2.jpg,10,1
+3,"Т-образная краб-система 25х25",25.00,/static/main/img/T-crab-3.jpg,10,1
+4,"X-образная краб-система 25х25",25.00,/static/main/img/T-crab-4.jpg,10,1
