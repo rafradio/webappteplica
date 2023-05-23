@@ -21,8 +21,8 @@
     > примеры заполнения в папке: /data
 
 * Использованы технологии:
-    > HTML5, BEM, JS ES6, OOP, arrays functions
-    > обработка web запросов, Python, Django
+    > HTML5, BEM, JS ES6, OOP, arrays functions<br>
+    > обработка web запросов, Python, Django<br>
     > MySQLconnection
     
 
